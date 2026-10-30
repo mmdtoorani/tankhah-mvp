@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="h-full antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2258c2" />
+    <title>سامانه تنخواه</title>
+    <link rel="icon" href="./icon.svg" />
+    <!-- Same as THEME_SCRIPT in lib/theme.ts: saved choice, else the device setting, before first paint. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-zQ-xjAfx.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/dist-62TeNfsI.js">
+    <link rel="modulepreload" crossorigin href="./assets/definitions-DlpntO5o.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-DYLhZu1N.css">
+  </head>
+  <body class="min-h-full font-sans">
+    <div id="root"></div>
+  </body>
+</html>
